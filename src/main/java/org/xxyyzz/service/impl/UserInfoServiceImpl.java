@@ -29,7 +29,7 @@ public class UserInfoServiceImpl implements UserInfoService {
             return null;
         }
 //        UserInfo userInfo = userInfoDao.getUserByName( userName );
-        UserInfo userInfo = userInfoDao.findByUserName( userName );
+        var userInfo = userInfoDao.findByUserName( userName );
         if( userInfo != null ) {
             return userInfo;
         } else {

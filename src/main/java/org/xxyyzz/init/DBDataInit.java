@@ -18,7 +18,7 @@ import javax.annotation.PostConstruct;
  * @createTime 2022年11月17日 15:37:00
  */
 
-@Component
+//@Component
 @Slf4j
 public class DBDataInit {
     @Autowired
