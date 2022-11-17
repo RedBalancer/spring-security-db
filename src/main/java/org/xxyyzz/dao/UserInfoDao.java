@@ -22,4 +22,5 @@ public interface UserInfoDao extends JpaRepository< UserInfo,Long > {
      */
 //    public UserInfo getUserByName( String userName );
     public UserInfo findByUserName( String userName );
+
 }
