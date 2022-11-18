@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.xxyyzz.service.UserInfoService;
 
@@ -25,7 +24,7 @@ public class WebController {
     UserInfoService service;
 
     @RequestMapping("/user/{name}")
-//    @PreAuthorize()
+    @PreAuthorize( "hasRole( \"ADMIN\" )")
     String getUserInfo( @PathVariable( "name" ) String userName) {
         return service.getUserByName( userName ).toString();
     }
