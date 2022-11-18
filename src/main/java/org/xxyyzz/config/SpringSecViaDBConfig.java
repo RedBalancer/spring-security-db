@@ -16,9 +16,9 @@ import org.xxyyzz.provider.VerifyUserService;
  * @createTime 2022年11月18日 14:20:00
  */
 
-@Configuration
+//@Configuration
 //@EnableGlobalAuthentication
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+//@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SpringSecViaDBConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired

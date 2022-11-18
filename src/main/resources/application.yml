@@ -10,8 +10,8 @@ spring:
     show-sql: true
     generate-ddl: true
 
-#debug:
-#  true
+debug:
+  true
 
 logging:
   level:
