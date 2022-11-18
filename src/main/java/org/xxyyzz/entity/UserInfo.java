@@ -1,5 +1,7 @@
 package org.xxyyzz.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 /**
@@ -10,60 +12,27 @@ import javax.persistence.*;
  * @createTime 2022年11月17日 14:16:00
  */
 
+@Data
 @Entity
+@Table( name="A_USERS",
+        indexes = {@Index(name = "index_on_name",  columnList="user_name", unique = true) }
+)
 public class UserInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     long Id;
 
+    @Column(name="user_name", nullable = true, length = 63, unique = true)
     String userName;
 
+    @Column(nullable = true, length = 128)
     String password;
 
+    @Column(nullable = true, length = 10)
     String role;
 
+    @Column
     int enabled;
-
-
-    public long getId() {
-        return Id;
-    }
-
-    public void setId(long id) {
-        Id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public int getEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(int enabled) {
-        this.enabled = enabled;
-    }
 
 }
