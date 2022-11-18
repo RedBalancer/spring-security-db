@@ -2,6 +2,7 @@ package org.xxyyzz.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.xxyyzz.dao.UserInfoDao;
 import org.xxyyzz.entity.UserInfo;
@@ -16,7 +17,7 @@ import org.xxyyzz.service.UserInfoService;
  */
 
 @Slf4j
-@Service
+@Component( "User_Services" )
 public class UserInfoServiceImpl implements UserInfoService {
 
     @Autowired
