@@ -13,7 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
  * @Description @TODO
  * @createTime 2022年11月17日 14:50:00
  */
-@SpringBootApplication( exclude = {SecurityAutoConfiguration.class} )
+@SpringBootApplication //( exclude = {SecurityAutoConfiguration.class} )
 public class SpringSecurityViaDB {
     public static void main(String[] args) {
         SpringApplication.run( SpringSecurityViaDB.class );
