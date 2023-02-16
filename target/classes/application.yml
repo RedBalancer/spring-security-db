@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.20.10.6:3306/spring_security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: chzhang
+    password: Unix11!
+
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+
+#debug:
+#  true
+
+logging:
+  level:
+    org:
+      xxyyzz: debug
+      #hibernate: debug
+server:
+  port: 8080

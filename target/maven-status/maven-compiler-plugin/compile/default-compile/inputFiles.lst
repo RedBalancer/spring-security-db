@@ -1,0 +1,13 @@
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\controller\WebController.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\init\DBDataInit.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\SpringSecurityViaDB.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\constants\Status.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\dao\UserInfoDao.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\service\impl\UserInfoServiceImpl.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\provider\VerifyUserService.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\config\SpringSecViaDBConfig.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\service\UserInfoService.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\controller\IPShow.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\config\SecurityConfigInBeanWay.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\dto\R.java
+C:\github\spring-securing\spring-security-db\src\main\java\org\xxyyzz\entity\UserInfo.java

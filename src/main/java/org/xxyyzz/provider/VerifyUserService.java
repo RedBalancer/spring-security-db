@@ -3,6 +3,7 @@ package org.xxyyzz.provider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,6 +14,7 @@ import org.xxyyzz.entity.UserInfo;
 import org.xxyyzz.service.UserInfoService;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Chunlong Zhang
@@ -37,9 +39,13 @@ public class VerifyUserService implements UserDetailsService {
         if( userByName == null ) {
             throw new UsernameNotFoundException( "User: " + username + " is not found" );
         }
-        GrantedAuthority grantedAuthority = new SimpleGrantedAuthority( "ROLE_" + userByName.getRole() );
-        var roles = new ArrayList<GrantedAuthority>();
-        roles.add( grantedAuthority );
+//        GrantedAuthority grantedAuthority = new SimpleGrantedAuthority( "ROLE_" + userByName.getRole() );
+//        var roles = new ArrayList<GrantedAuthority>();
+//        roles.add( grantedAuthority );
+
+        // AuthorityUtils.commaSeparatedStringToAuthorityList是Spring Security
+        //提供的用于将逗号隔开的权限集字符串切割成可用权限对象列表的方法
+        List<GrantedAuthority> roles = AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_" + userByName.getRole());
 
         return new User( userByName.getUserName(), userByName.getPassword(), roles );
     }

@@ -1,0 +1,13 @@
+org\xxyyzz\controller\WebController.class
+org\xxyyzz\service\UserInfoService.class
+org\xxyyzz\SpringSecurityViaDB.class
+org\xxyyzz\dao\UserInfoDao.class
+org\xxyyzz\config\SecurityConfigInBeanWay.class
+org\xxyyzz\config\SpringSecViaDBConfig.class
+org\xxyyzz\dto\R.class
+org\xxyyzz\constants\Status.class
+org\xxyyzz\service\impl\UserInfoServiceImpl.class
+org\xxyyzz\init\DBDataInit.class
+org\xxyyzz\controller\IPShow.class
+org\xxyyzz\provider\VerifyUserService.class
+org\xxyyzz\entity\UserInfo.class
